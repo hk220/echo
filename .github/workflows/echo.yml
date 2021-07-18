@@ -1,0 +1,9 @@
+name: echo
+
+on: push
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${GITHUB_REF}"

@@ -3,7 +3,7 @@ name: Build and Push images
 on:
   push:
     tags:
-      - v0.0.*
+      - v*
 
 jobs:
   build:
@@ -28,4 +28,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/echo:0.0
+            ghcr.io/${{ github.repository_owner }}/echo:${GITHUB_REF##*/v}

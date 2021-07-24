@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: echo
-        image: ghcr.io/hk220/echo:v0.0.0
+        image: ghcr.io/hk220/echo:0.0.5
         ports:
         - containerPort: 9001
 ---
